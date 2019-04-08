@@ -1,0 +1,21 @@
+.container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 760px;
+  }
+
+  @media @desktop-widths {
+    width: 1024px;
+  }
+}
+.container-fluid() {
+  width: auto;
+
+  @media @tablet-widths {
+    width: 94%;
+    max-width: 875px;
+    margin: 0 auto;
+  }
+}

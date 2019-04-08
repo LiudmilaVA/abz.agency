@@ -1,0 +1,131 @@
+.reviews {
+  .container();
+
+  min-height: 670px;
+  margin-bottom: 60px;
+}
+
+.reviews__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-family: Overpass;
+  font-size: 26px;
+  line-height: 50px;
+
+  text-align: center;
+}
+
+.reviews--image {
+  margin-bottom: 27px;
+
+  margin-left: 50px;
+
+  width: 219px;
+  height: 216px;
+}
+
+.reviews__wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  text-align: center;
+}
+
+.reviews__slogan {
+  margin: 0 50px;
+
+  font-family: "Overpass";
+  font-size: 22px;
+}
+
+.reviews__intro {
+  font-size: 15px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.reviews__login {
+  font-size: 21px;
+  line-height: 60px;
+  font-weight: 700;
+
+  color: @bg-orange;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: #fc831f;
+  }
+}
+/*---------------------------TABLET------------------------------------------*/
+@media @tablet-widths {
+
+  .reviews {
+    .container();
+
+    min-height: 360px;
+    margin-bottom: 125px;
+  }
+
+  .reviews__title {
+    font-size: 42px;
+
+    margin-bottom: 45px;
+  }
+
+  .reviews--image {
+    float: left;
+    margin-left: 20px;
+    margin-right: 15px;
+  }
+
+  .reviews__wrapper {
+    float: left;
+
+    text-align: left;
+    width: 470px;
+  }
+
+  .reviews__slogan {
+    margin: 0;
+
+    font-size: 26px;
+  }
+
+}
+
+/*---------------------DESKTOP--------------------------------------------*/
+
+@media @desktop-widths {
+
+  .reviews {
+    margin-bottom: 120px;
+    min-height: 360px;
+  }
+
+  .reviews--image {
+    margin: 0;
+    margin-top: -23px;
+    margin-left: 47px;
+
+    width: 289px;
+    height: 285px;
+  }
+
+  .reviews__wrapper {
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+
+    width: 625px;
+  }
+
+  .reviews__intro {
+    font-size: 15px;
+
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+}

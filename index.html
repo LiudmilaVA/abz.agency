@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Some Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <header class="page-header">
+
+    <div class="page-header__logo"><img src="img/logo.svg" width="134px" height="24px"></div>
+
+    <nav class="main-nav main-nav--closed">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+      <div class="main-nav__wrapper">
+
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#">About me</a></li>
+          <li class="main-nav__item"><a href="#">Relationships</a></li>
+          <li class="main-nav__item"><a href="#">Requirements</a></li>
+          <li class="main-nav__item"><a href="#">Users</a></li>
+          <li class="main-nav__item"><a href="#">Sign Up</a></li>
+          <li class="main-nav__item"><a href="#">Sign Out</a></li>
+        </ul>
+
+        <ul class="main-nav__user-list">
+          <li class="main-nav__user-item"><svg width="70" height="70"><circle r="45%" cx="50%" cy="50%" fill="#555555"/></svg></li>
+          <li class="main-nav__user-item">Superstar</li>
+          <li class="main-mav__user-item"><a href="#">Superstar@gmail.com</a></li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <h1 class="page-header__title">Test assignment for Frontend Developer position</h1>
+    <p class="page-header__intro">We kindly remind you that your test assignment should be submitted as a link to github/bitbucket repository. <span>Please be patient, we consider and respond to every application that meets minimum requirements. We look forward to your submission. Good luck!</span></p>
+    <a class="page-header__login" href="#">Sign Up</a>
+
+  </header>
+
+  <main>
+
+    <section class="reviews">
+
+      <h2 class="reviews__title">Let's get acquainted</h2>
+      <div class="reviews--image"><img src="../img/man-mobile.svg"></div>
+
+      <div class="reviews__wrapper">
+
+        <h3 class="reviews__slogan">I am cool frontend developer</h3>
+        <p class="reviews__intro">When real users have a slow experience on mobile, they're much less likely to find what they are looking for or purchase from you in the future. For many sites this equates to a huge missed opportunity, especially when more than half of visits are abandoned if a mobile page takes over 3 seconds to load.</p>
+        <p class="reviews__intro">Last week, Google Search and Ads teams announced two new speed initiatives to help improve user-experience on the web. </p>
+        <a class="reviews__login" href="#">Sign Up</a>
+
+      </div>
+
+    </section>
+
+
+    <section class="advantages">
+
+      <h2 class="advantages__title">About my relationships with web-development</h2>
+
+      <ul class="advantages__list">
+
+        <li class="advantages__item">
+          <img src="../img/html.svg" width="88px" height="99px" alt="html">
+          <h3 class="advantages__item-title">I'm in love with HTML</h3>
+          <p class="advantages__description">Hypertext Markup Language (HTML)<br> is the standard markup language for creating web pages and web applications.</p>
+        </li>
+
+        <li class="advantages__item">
+          <img src="../img/css.svg" width="88px" height="99px" alt="css">
+          <h3 class="advantages__item-title">CSS is my best friend</h3>
+          <p class="advantages__description">Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.</p>
+        </li>
+
+        <li class="advantages__item">
+          <img src="../img/javascript.svg" width="88px" height="99px" alt="javascript">
+          <h3 class="advantages__item-title">JavaScript is my passion</h3>
+          <p class="advantages__description">JavaScript is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.</p>
+        </li>
+
+      </ul>
+    </section>
+
+    <section class="requirements">
+
+      <h2 class="requirements__title">General requirements for the test task</h2>
+
+      <div class="requirements__wrapper">
+
+        <picture>
+          <source media="(min-width: 1024px)" srcset="../img/man-laptop-v1.svg">
+          <source media="(min-width: 768px)" srcset="../img/man-laptop-v2.svg">
+          <img src="../img/man-laptop-v1.svg" width="257px" height="216px">
+        </picture>
+
+        <div class="requirements__text-wrapper">
+          <p class="requirements__text">Users want to find answers to their questions quickly and data shows that people really care about how quickly their pages load. The Search team announced speed would be a ranking signal for desktop searches in 2010 and as of this month (July 2018), page speed will be a ranking factor for mobile searches too.</p>
+          <p class="requirements__text">If you're a developer working on a site, now is a good time to evaluate your performance using our speed tools. Think about how performance affects the user experience of your pages and consider measuring a variety of real-world user&#8209;centric performance metrics.</p>
+          <p class="requirements__text">Are you shipping too much JavaScript? Too many images? Images and JavaScript are the most significant contributors to the page weight that affect page load time based on data from HTTP Archive and the Chrome User Experience Report - our public dataset for key UX metrics as experienced by Chrome users under real&#8209;world conditions.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="users">
+
+      <h2 class="users__title">Our cheerful users</h2>
+
+      <b class="users__slogan">Attention! Sorting users by registration date</b>
+
+      <!-- <div class="users__wrapper"> -->
+
+        <ul class="users__list">
+
+          <li class="users__item">
+            <svg width="70" height="80"><circle r="45%" cx="50%" cy="50%" fill="#394e7c"/></svg>
+            <b class="users__name">Noah</b>
+            <p class="users__information">Leading specialist of the Control Department<br>noah.controldepartment@gmail.com<br>+38 (050) 678 03 24</p>
+          </li>
+          <li class="users__item">
+            <svg width="70" height="80"><circle r="45%" cx="50%" cy="50%" fill="#394e7c"/></svg>
+            <b class="users__name">Adolph Blaine Charles David Earl</b>
+            <p class="users__information">The contextual advertising specialist<br>adolph.blainecharles-davidearl@example.com<br>+38 (095) 556 08 45</p>
+          </li>
+          <li class="users__item">
+            <svg width="70" height="80"><circle r="45%" cx="50%" cy="50%" fill="#394e7c"/></svg>
+            <b class="users__name">Liamgrievescasey Smith Wiam</b>
+            <p class="users__information">Lead designer<br>liamgrievescasey@example.com<br>+38 (050) 273 93 32</p>
+          </li>
+          <li class="users__item">
+            <svg width="70" height="80"><circle r="45%" cx="50%" cy="50%" fill="#394e7c"/></svg>
+            <b class="users__name">Elizabeth</b>
+            <p class="users__information">Frontend developer<br>elisabet.frontend@gmail.com<br>+38 (095) 924 66 37</p>
+          </li>
+          <li class="users__item">
+            <svg width="70" height="80"><circle r="45%" cx="50%" cy="50%" fill="#394e7c"/></svg>
+            <b class="users__name">Alexander</b>
+            <p class="users__information">Backend developer<br>alexander.backend@gmail.com<br>+38 (050) 789 24 09</p>
+          </li>
+          <li class="users__item">
+            <svg width="70" height="80"><circle r="45%" cx="50%" cy="50%" fill="#394e7c"/></svg>
+            <b class="users__name">Mason</b>
+            <p class="users__information">QA<br>mason.qa@gmail.com<br>+38 (095) 283 27 00</p>
+          </li>
+
+        </ul>
+      <!-- </div> -->
+      <a class="users__button-more">Show more</a>
+
+    </section>
+
+    <section class="registration">
+
+      <h2 class="registration__title">Register to get a work</h2>
+      <p class="registration__intro">Attention! After successful registration and alert, update the list of users<br> in the block from the top</p>
+
+      <form class="registration__form" action="#" method="post" enctype="multipart/form-data">
+
+        <fieldset class="registration__info">
+          <legend class="registration__form-legend">Name</legend>
+          <input class="registration__form-field" type="text" name="name-field" placeholder="Your name" required>
+        </fieldset>
+
+        <fieldset class="registration__info">
+          <legend class="registration__form-legend">Email</legend>
+          <input class="registration__form-field" type="email" name="email-field" placeholder="Your email" required>
+        </fieldset>
+
+        <fieldset class="registration__info">
+          <legend class="registration__form-legend">Phone</legend>
+          <input class="registration__form-field" type="tel" name="tel-field" pattern="+38 ([0-9]{3}) [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+38 (___) ___ __ __" required>
+        </fieldset>
+
+        <select class="registration__select" name="select-field" required>
+          <option >Select your position</option>
+          <option>Frontend developer</option>
+          <option>Backend developer</option>
+          <option>Designer</option>
+          <option>QA</option>
+        </select>
+
+        <div class="registration__photo-upload">
+          <input class="registration__form-field" type="text" name="photo-field" placeholder="Upload your photo">
+
+          <label class="registration__photo--wrapper"><span>Upload</span>
+            <input class="registration__photo-file" type="file" name="file-field" value="Upload">
+          </label>
+
+          <small class="registration__photo-standart">File format jpg  up to 5 MB, the minimum size of 70x70px</small>
+        </div>
+
+        <button class="registration__sign-up" type="submit">Sign Up</button>
+
+      </form>
+
+    </section>
+
+
+  </main>
+
+  <footer class="page-footer">
+
+      <div class="footer__nav">
+
+        <div class="page-footer__logo"><img src="img/logo-footer.svg" width="134px" height="24px"></div>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item"><a href="#">About me</a></li>
+          <li class="footer-nav__item"><a href="#">Relationships</a></li>
+          <li class="footer-nav__item"><a href="#">Requirements</a></li>
+          <li class="footer-nav__item"><a href="#">Users</a></li>
+          <li class="footer-nav__item"><a href="#">Sign Up</a></li>
+        </ul>
+
+      </div>
+
+
+      <div class="page-footer--wrapper">
+
+        <div class="page-footer__contacts">
+          <p class="contacts__e-mail">work.of.future@gmail.com</p>
+          <p class="contacts__phone">+38 (050) 789 24 98</p>
+          <p class="contacts__mobile">+38 (095) 556 08 45</p>
+        </div>
+
+        <!-- <div class="page-footer__info"> -->
+
+          <table class="footer__table">
+            <tr class="footer__table--row">
+              <td>News</td>
+              <td>Overview</td>
+              <td>Tutorials</td>
+              <td>FAQ</td>
+            </tr>
+
+            <tr class="footer__table--row">
+              <td>Blog</td>
+              <td>Design</td>
+              <td>Resources</td>
+              <td>Terms</td>
+            </tr>
+
+            <tr class="footer__table--row">
+              <td>Partners</td>
+              <td>Code</td>
+              <td>Guides</td>
+              <td>Conditions</td>
+            </tr>
+
+            <tr class="footer__table--row">
+              <td>Shop</td>
+              <td>Collaborate</td>
+              <td>Examples</td>
+              <td>Help</td>
+            </tr>
+          </table>
+
+        <!-- </div> -->
+
+      </div>
+
+
+      <div class="page-footer__social">
+
+        <p class="page-footer__copyright">© abz.agency specially for the test task</p>
+
+        <ul class="social__list">
+          <li><a class="social__btn social__btn--fb" href="#">Фейсбук</a></li>
+          <li><a class="social__btn social__btn--in" href="#">Линкедин</a></li>
+          <li><a class="social__btn social__btn--inst" href="#">Инстаграм</a></li>
+          <li><a class="social__btn social__btn--twit" href="#">Твиттер</a></li>
+          <li><a class="social__btn social__btn--pin" href="#">Пинтерест</a></li>
+        </ul>
+      </div>
+
+  </footer>
+
+  <script>
+
+    var navMain = document.querySelector(".main-nav");
+    var navToggle = document.querySelector(".main-nav__toggle");
+
+    navToggle.addEventListener("click", function() {
+      if (navMain.classList.contains("main-nav--closed")) {
+        navMain.classList.remove("main-nav--closed");
+        navMain.classList.add("main-nav--opened");
+      }
+      else {
+        navMain.classList.add("main-nav--closed");
+        navMain.classList.remove("main-nav--opened");
+      }
+    });
+
+  </script>
+
+</body>
+</html>

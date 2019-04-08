@@ -1,0 +1,271 @@
+.registration {
+  .container();
+
+  box-sizing: border-box;
+  padding: 0 15px;
+  min-height: 665px;
+  margin-bottom: 64px;
+}
+
+.registration__title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-family: Overpass;
+  font-size: 26px;
+  text-align: center;
+}
+
+.registration__intro {
+  margin: 0;
+  margin-bottom: 23px;
+
+  font-size: 15px;
+  text-align: center;
+}
+
+.registration__form {
+  margin: 0;
+  padding-top: 5px;
+}
+
+.registration__info,
+.registration__select,
+.registration__photo-upload {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 34px;
+
+  border: none;
+}
+
+.registration__form-legend {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+
+    padding: 0 3px;
+
+    font-size: 11px;
+    color: #b7b7b7;
+    background-color: #ffffff;
+}
+
+.registration__form-field {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 18px 14px;
+
+    border: 1px solid #b7b7b7;
+    border-radius: 4px;
+
+    &:focus {
+      box-sizing: border-box;
+
+      outline: none;
+      border: 2px solid #b7b7b7;
+      border-radius: 4px;
+    }
+}
+
+.registration__select {
+  position: relative;
+  width: 100%;
+  margin-bottom: 34px;
+
+  padding: 19px 14px;
+
+  border: 1px solid #b7b7b7;
+  border-radius: 4px;
+
+  &:focus {
+    outline: none;
+    border: 2px solid #b7b7b7;
+    border-radius: 4px;
+  }
+}
+
+.registration__photo-upload {
+  position: relative;
+
+  margin-bottom: 25px;
+}
+
+.registration__photo--wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 24px;
+
+    padding: 15px 17px;
+    background: url("../img/upload.svg") no-repeat;
+    background-position: center;
+    border: 2px solid @bg-orange;
+    border-radius: 0 4px 4px 0;
+
+    font-size: 0;
+    cursor: pointer;
+
+    &:hover {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 20px;
+      height: 24px;
+
+      padding: 15px 17px;
+      background: url("../img/sign-out.svg") no-repeat;
+      background-position: center;
+      border-radius: 0 0 4px 4px;
+
+      transform: rotate(-90deg);
+    }
+}
+
+.registration__photo-file {
+    display: none;
+}
+
+.registration__photo-standart {
+    display: block;
+
+    margin: 7px 50px 0 20px;
+
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.registration__sign-up {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  color: #8d8c8c;
+  background-color: #d7d7d7;
+  border: none;
+  border-radius: 4px;
+
+  &.registration__sign-up--able {
+    color: #ffffff;
+    background-color: @bg-orange;
+
+    &:hover {
+      background-color: #fc831f;
+    }
+  }
+}
+
+/*--------------------------------TABLET-----------------------------------*/
+@media @tablet-widths {
+
+  .registration {
+    padding: 0 24px;
+    margin-bottom: 110px;
+
+    min-height: 420px;
+  }
+
+  .registration__title {
+    margin-bottom: 38px;
+
+    font-size: 42px;
+  }
+
+  .registration__intro {
+    padding: 0 150px;
+    margin-bottom: 47px;
+
+    font-size: 17px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  .registration__form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .registration__info {
+    width: 30.5%;
+    margin-bottom: 40px;
+  }
+
+  .registration__select {
+    width: 48%;
+    align-self: flex-start;
+  }
+
+  .registration__photo-upload {
+    width: 48%;
+    margin-bottom: 40px;
+  }
+
+  .registration__photo--wrapper,
+  .registration__photo--wrapper:hover {
+    padding-left: 52px;
+    padding-right: 52px;
+
+    background-image: none;
+    transform: none;
+  }
+
+  .registration__photo--wrapper span {
+      position: absolute;
+      left: 30px;
+
+      font-size: 20px;
+      font-weight: 700;
+      color: @bg-orange;
+    }
+
+  .registration__photo-standart {
+    margin-right: 0;
+  }
+
+  .registration__sign-up {
+    flex-basis: 290px;
+    margin: auto;
+  }
+}
+
+/*---------------------DESKTOP---------------------------*/
+
+@media @desktop-widths {
+
+  .registration {
+    padding: 0 47px;
+    margin-bottom: 130px;
+
+    min-height: 395px;
+  }
+
+  .registration__title {
+    margin-bottom: 25px;
+  }
+
+  .registration__intro {
+    padding: 0;
+    margin-bottom: 60px;
+  }
+
+  .registration__info {
+    width: 31%;
+    margin-bottom: 40px;
+  }
+
+  .registration__select,
+  .registration__photo-upload {
+    width: 48.4%;
+  }
+
+}

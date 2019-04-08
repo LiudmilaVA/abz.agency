@@ -1,0 +1,259 @@
+.page-footer {
+  .container();
+
+  position: relative;
+
+  box-sizing: border-box;
+  padding: 31px 0;
+  min-height: 458px;
+
+  background-color: @bg-blue;
+  color: #ffffff;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0;
+
+  border-bottom: 1px solid #605cc1;
+}
+
+.page-footer__logo {
+  margin-bottom: 10px;
+}
+
+.footer-nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+.footer-nav__item a{
+  text-decoration: none;
+  color: #ffffff;
+
+  font-size: 15px;
+  line-height: 25px;
+
+  &:hover {
+    color: @bg-orange;
+  }
+}
+
+.page-footer__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 25px;
+  margin-bottom: 13px;
+}
+
+.page-footer__contacts p {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.footer__table {
+  display: none;
+}
+
+.page-footer__social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-footer__copyright {
+  font-size: 11px;
+}
+
+.social__list {
+  order: -1;
+  display: inline-flex;
+  justify-content: space-between;
+
+  width: 210px;
+  min-height: 26px;
+
+  margin: 0;
+  margin-bottom: 3px;
+  padding: 0;
+  list-style: none;
+}
+
+.social__btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 26px;
+  height: 26px;
+  font-size: 0px;
+}
+
+.social__btn--fb {
+  background: url("../img/facebook.svg") no-repeat;
+}
+
+.social__btn--in {
+  background: url("../img/linkedin.svg") no-repeat;
+}
+
+.social__btn--inst {
+  background: url("../img/instagram.svg") no-repeat;
+}
+
+.social__btn--twit {
+  background: url("../img/twitter.svg") no-repeat;
+}
+
+.social__btn--pin {
+  background: url("../img/pinterest.svg") no-repeat;
+}
+
+/*------------------------------TABLET-------------------------------------*/
+
+@media @tablet-widths {
+
+  .page-footer {
+    padding: 0;
+
+    min-height: 318px;
+  }
+
+  .footer__nav {
+    flex-direction: row;
+    justify-content: space-between;
+
+    min-height: 83px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+  .page-footer__logo {
+    margin: 0;
+  }
+
+  .footer-nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 63%;
+    margin: 0;
+  }
+
+  .page-footer--wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 25px;
+    padding-left: 22px;
+    padding-right: 18px;
+
+    margin-bottom: 25px;
+  }
+
+  .page-footer__contacts {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    align-items:  stretch;
+  }
+
+  .page-footer__contacts p {
+    margin-bottom: 25px;
+  }
+
+  .page-footer__contacts p:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer__table {
+    display: table;
+    width: 65%;
+    height: 100px;
+  }
+
+  .footer__table--row {
+    text-align: right;
+
+    & td {
+      height: 25px;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .page-footer__social {
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .social__list {
+    order: 0;
+  }
+
+}
+
+/*--------------------------DESKTOP----------------------------*/
+
+@media @desktop-widths {
+
+  .page-footer {
+    min-height: 314px;
+  }
+
+  .footer__nav {
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+
+  .footer-nav__list {
+    width: 49%;
+  }
+
+  .page-footer--wrapper {
+    padding-left: 47px;
+    padding-right: 47px;
+    margin-bottom: 25px;
+  }
+
+  .page-footer__contacts p {
+    padding-left: 35px;
+    margin-bottom: 13px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .contacts__e-mail {
+    background: url("../img/mail.svg") no-repeat left;
+  }
+
+  .contacts__phone {
+    background: url("../img/phone.svg") no-repeat left;
+  }
+
+  .contacts__mobile {
+    background: url("../img/cellphone.svg") no-repeat left;
+  }
+
+  .page-footer__social {
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+
+}

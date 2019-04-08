@@ -1,0 +1,105 @@
+.requirements {
+  .container();
+
+  color: #ffffff;
+
+  min-height: 1032px;
+  box-sizing: border-box;
+  padding: 65px 15px;
+
+  background-image: url(../img/bg-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.requirements__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-family: Overpass;
+  font-size: 26px;
+  line-height: 30px;
+
+  text-align: center;
+}
+
+.requirements img {
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.requirements__text {
+  margin: 0;
+  padding: 0;
+
+  font-size: 15px;
+
+  text-align: center;
+}
+
+.requirements__text:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+/*-----------------------------------TABLET--------------------------*/
+
+@media @tablet-widths {
+
+  .requirements {
+    min-height: 880px;
+
+    padding: 120px 24px;
+  }
+
+  .requirements__title {
+    margin: 0 140px 40px;
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  .requirements__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .requirements img {
+    margin: 0;
+    width: 343px;
+    height: 407px;
+  }
+
+  .requirements__text {
+    width: 342px;
+    text-align: left;
+  }
+}
+
+/*-------------------------------------------DESKTOP------------------------------------------------------*/
+
+@media @desktop-widths {
+
+  .requirements {
+    padding: 135px 47px;
+
+    min-height: 755px;
+  }
+
+  .requirements__title {
+    padding: 0;
+    margin: 0 100px 40px;
+  }
+
+  .requirements__wrapper {
+    align-items: center;
+  }
+
+  .requirements img {
+    width: 429px;
+    height: auto;
+  }
+
+  .requirements__text {
+    width: 450px;
+  }
+}

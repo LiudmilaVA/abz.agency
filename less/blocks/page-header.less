@@ -1,0 +1,158 @@
+.page-header {
+
+  .container();
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  background-color: @bg-blue;
+  color: #ffffff;
+
+  min-height: 458px;
+  margin-bottom: 60px;
+
+  background-image: url(../img/bg-1.jpg);
+  background-position: -150px 45px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.page-header__logo {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+
+  z-index: 3;
+  height: 24px;
+  text-align: left;
+}
+
+.page-header__title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: normal;
+
+  text-align: center;
+}
+
+.page-header__intro {
+  margin: 0;
+  margin-bottom: 36px;
+  padding: 0 10px;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+
+  text-align: center;
+}
+
+.page-header__intro span {
+  display: none;
+}
+
+.page-header__login {
+  padding: 10px 0;
+  margin: 0 15px;
+
+  font-size: 20px;
+  line-height: 22px;
+
+  text-align: center;
+  text-decoration: none;
+  background-color: @bg-orange;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: #fc831f;
+  }
+}
+
+/*--------------------------TABLET--------------------------------*/
+
+@media @tablet-widths {
+
+  .page-header {
+    min-height: 686px;
+    margin-bottom: 117px;
+
+    background-position: 0 50px;
+  }
+
+  .page-header__title {
+    margin: 0 367px  28px 20px;
+
+    font-size: 42px;
+    line-height: 48px;
+    text-align: left;
+  }
+
+  .page-header__intro {
+    padding: 0;
+    margin: 0 335px 35px 20px;
+
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .page-header__intro span {
+    display: inline;
+  }
+
+  .page-header__login {
+    margin: 0 454px 0 20px;
+
+    font-weight: bold;
+  }
+}
+
+/*--------------------DESKTOP--------------------------*/
+
+@media @desktop-widths {
+
+  .page-header {
+    min-height: 790px;
+    margin-bottom: 138px;
+
+    background-color: @bg-blue;
+    background-repeat: no-repeat;
+  }
+
+  .page-header__logo {
+    left: 47px;
+  }
+
+  .page-header__title {
+    margin: 0 500px 20px 46px;
+
+    font-family: Overpass;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .page-header__intro {
+    margin: 0 495px 40px 46px;
+
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 26px;
+  }
+
+  .page-header__login {
+    margin-left: 46px;
+
+    font-weight: normal;
+    width: 292px;
+  }
+
+}
