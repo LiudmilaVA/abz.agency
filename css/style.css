@@ -262,6 +262,9 @@ img {
   line-height: 20px;
   padding-left: 15px;
 }
+.user--sign-out {
+  display: none;
+}
 /*------------------------------TABLET-------------------------------*/
 @media (min-width: 768px) {
   .main-nav {
@@ -328,28 +331,31 @@ img {
     font-size: 14px;
     line-height: 16px;
   }
-  .main-nav__user-list::after {
-    content: "";
+  /*--------------------------------------------------------------------------------------*/
+  .main-nav__user-list .user--sign-out {
+    display: block;
     position: absolute;
-    top: 23px;
+    padding: 0;
+    top: 20px;
     left: 205px;
-    width: 24px;
-    height: 20px;
-    background-image: url("../img/sign-out.svg");
     cursor: pointer;
-    /*не работает*/
   }
-  .main-nav__user-list::after:active {
+  .main-nav__user-list .user--sign-out:hover {
+    color: #2638bb;
+  }
+  .main-nav__user-list .user--sign-out:active {
     opacity: 0.5;
   }
-  .main-nav__user-list svg {
+  .main-nav__user-item svg {
     position: absolute;
     top: 10px;
     left: 150px;
     padding: 0;
     width: 45px;
     height: 45px;
+    background: url("img/user-superstar-2x.jpg") no-repeat;
   }
+  /*--------------------------------------------------------------------------------->>>>>>>>>>>>>>>>>*/
   .main-nav__user-item a {
     font-size: 12px;
     line-height: 14px;
