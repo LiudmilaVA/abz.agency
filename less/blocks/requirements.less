@@ -1,6 +1,4 @@
 .requirements {
-  .container();
-
   color: #ffffff;
 
   min-height: 1032px;
@@ -10,6 +8,10 @@
   background-image: url(../img/bg-2.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.requirements__wrapper {
+  .container-fluid();
 }
 
 .requirements__title {
@@ -24,7 +26,8 @@
 }
 
 .requirements img {
-  margin-left: 15px;
+  display: block;
+  margin: auto;
   margin-bottom: 15px;
 }
 
@@ -60,7 +63,7 @@
   .requirements__wrapper {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .requirements img {

@@ -9,6 +9,16 @@
   color: #000000;
 }
 
+// .page-header__logo {
+//   display: flex;
+//   align-items: center;
+// }
+
+.main-nav--wrapper {
+  position: relative;
+  .container-fluid();
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 20px;
@@ -48,7 +58,7 @@
               0 20px 0 0 #2638bb;
 }
 
-.main-nav__wrapper {
+.main-nav__list--wrapper {
   display: flex;
   flex-direction: column;
 }
@@ -63,7 +73,7 @@
   border: none;
 }
 
-.main-nav--opened .main-nav__wrapper {
+.main-nav--opened .main-nav__list--wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -146,9 +156,10 @@
 
   .main-nav {
     margin-bottom: 115px;
+    background-color: white;
   }
 
-  .main-nav--opened .main-nav__wrapper {
+  .main-nav--opened .main-nav__list--wrapper {
     right: 510px;
     height: 687px;
   }
@@ -162,7 +173,7 @@
     margin-bottom: 130px;
   }
 
-  .main-nav .main-nav__wrapper {
+  .main-nav .main-nav__list--wrapper {
     position: static;
 
     display: flex;
@@ -203,22 +214,21 @@
   .main-nav__toggle {
     display: none;
   }
-  .main-nav__item a {
 
-  }
   .main-nav__item:last-child {
     display: none;
   }
 
   .main-nav__user-item {
-
     font-size: 14px;
     line-height: 16px;
   }
+
+
 /*--------------------------------------------------------------------------------------*/
   .main-nav__user-list .user--sign-out{
     display: block;
-    
+    fill: @bg-blue;
     position: absolute;
     padding: 0;
     top: 20px;
@@ -226,7 +236,7 @@
     cursor: pointer;
 
     &:hover {
-      color: #2638bb;
+      fill: #2638bb;
     }
 
     &:active {
@@ -243,7 +253,7 @@
     width: 45px;
     height: 45px;
 
-    background: url("img/user-superstar-2x.jpg") no-repeat;
+    // background: url("img/user-superstar-2x.jpg") no-repeat;
   }
 /*--------------------------------------------------------------------------------->>>>>>>>>>>>>>>>>*/
 

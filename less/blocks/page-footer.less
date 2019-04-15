@@ -1,14 +1,16 @@
 .page-footer {
-  .container();
-
   position: relative;
 
   box-sizing: border-box;
-  padding: 31px 0;
-  min-height: 458px;
+  padding: 31px 0 0;
+  // min-height: 458px;
 
   background-color: @bg-blue;
   color: #ffffff;
+}
+
+.page-footer--wrapper {
+  .container-fluid();
 }
 
 .footer__nav {
@@ -46,6 +48,10 @@
   &:hover {
     color: @bg-orange;
   }
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
 .page-footer__contacts {
@@ -60,6 +66,10 @@
 .page-footer__contacts p {
   margin: 0;
   margin-bottom: 14px;
+}
+
+.page-footer__contacts svg {
+  display: none;
 }
 
 .footer__table {
@@ -97,25 +107,16 @@
   height: 26px;
   font-size: 0px;
 }
+.social__btn svg {
+  fill: #ffffff;
 
-.social__btn--fb {
-  background: url("../img/facebook.svg") no-repeat;
-}
+  &:hover {
+    fill: @bg-orange;
+  }
 
-.social__btn--in {
-  background: url("../img/linkedin.svg") no-repeat;
-}
-
-.social__btn--inst {
-  background: url("../img/instagram.svg") no-repeat;
-}
-
-.social__btn--twit {
-  background: url("../img/twitter.svg") no-repeat;
-}
-
-.social__btn--pin {
-  background: url("../img/pinterest.svg") no-repeat;
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 /*------------------------------TABLET-------------------------------------*/
@@ -149,7 +150,7 @@
     margin: 0;
   }
 
-  .page-footer--wrapper {
+  .page-footer--center {
     display: flex;
     justify-content: space-between;
 
@@ -191,6 +192,10 @@
       &:hover {
         text-decoration: underline;
       }
+
+      &:active {
+        color: @bg-orange;
+      }
     }
   }
 
@@ -225,13 +230,14 @@
     width: 49%;
   }
 
-  .page-footer--wrapper {
+  .page-footer--center {
     padding-left: 47px;
     padding-right: 47px;
     margin-bottom: 25px;
   }
 
   .page-footer__contacts p {
+    position: relative;
     padding-left: 35px;
     margin-bottom: 13px;
 
@@ -239,17 +245,21 @@
     line-height: 30px;
   }
 
-  .contacts__e-mail {
-    background: url("../img/mail.svg") no-repeat left;
-  }
+.page-footer__contacts svg {
+    display: inline-block;
 
-  .contacts__phone {
-    background: url("../img/phone.svg") no-repeat left;
-  }
+    position: absolute;
+    left: 0;
+    fill: #ffffff;
 
-  .contacts__mobile {
-    background: url("../img/cellphone.svg") no-repeat left;
-  }
+      &:hover {
+        fill: @bg-orange;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
+}
 
   .page-footer__social {
     padding-left: 47px;

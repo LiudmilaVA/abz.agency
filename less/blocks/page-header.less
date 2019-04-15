@@ -1,38 +1,40 @@
 .page-header {
 
-  .container();
+  background-color: @bg-blue;
+
+  background-image: url(../img/bg-1.jpg);
+  background-position: center 0;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+}
+
+.page-header--wrapper {
+  .container-fluid();
 
   position: relative;
   display: flex;
   flex-direction: column;
+  min-height: 394px;
 
-  background-color: @bg-blue;
   color: #ffffff;
-
-  min-height: 458px;
-  margin-bottom: 60px;
-
-  background-image: url(../img/bg-1.jpg);
-  background-position: -150px 45px;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-
 
 .page-header__logo {
   position: absolute;
   top: 20px;
   left: 15px;
 
-  z-index: 3;
+  // z-index: 3;
   height: 24px;
   text-align: left;
 }
 
 .page-header__title {
   margin: 0;
-  margin-bottom: 15px;
-  padding: 0;
+  margin-bottom: 8%;
+  padding: 0 9%;
 
   font-size: 30px;
   line-height: 34px;
@@ -43,8 +45,8 @@
 
 .page-header__intro {
   margin: 0;
-  margin-bottom: 36px;
-  padding: 0 10px;
+  margin-bottom: 12%;
+  padding: 0 5%;
 
   font-size: 16px;
   line-height: 22px;
@@ -59,7 +61,7 @@
 
 .page-header__login {
   padding: 10px 0;
-  margin: 0 15px;
+  margin: 0 5%;
 
   font-size: 20px;
   line-height: 22px;
@@ -70,7 +72,7 @@
   color: #ffffff;
   border-radius: 5px;
   cursor: pointer;
-  
+
   &:hover {
     background-color: #fc831f;
   }
@@ -82,13 +84,12 @@
 
   .page-header {
     min-height: 686px;
-    margin-bottom: 117px;
-
-    background-position: 0 50px;
+    background-position: 0 40px;
   }
 
   .page-header__title {
-    margin: 0 367px  28px 20px;
+    padding: 0;
+    margin: 0 48%  4% 3%;
 
     font-size: 42px;
     line-height: 48px;
@@ -97,7 +98,7 @@
 
   .page-header__intro {
     padding: 0;
-    margin: 0 335px 35px 20px;
+    margin: 0 48% 6% 3%;
 
     font-size: 18px;
     line-height: 24px;
@@ -109,7 +110,7 @@
   }
 
   .page-header__login {
-    margin: 0 454px 0 20px;
+    margin: 0 60% 0 3%;
 
     font-weight: bold;
   }
@@ -121,7 +122,6 @@
 
   .page-header {
     min-height: 790px;
-    margin-bottom: 138px;
 
     background-color: @bg-blue;
     background-repeat: no-repeat;
@@ -132,7 +132,7 @@
   }
 
   .page-header__title {
-    margin: 0 500px 20px 46px;
+    margin: 0 49% 2% 5%;
 
     font-family: Overpass;
     font-weight: 600;
@@ -141,7 +141,7 @@
   }
 
   .page-header__intro {
-    margin: 0 495px 40px 46px;
+    margin: 0 55% 4% 5%;
 
     font-size: 20px;
     font-weight: normal;
@@ -149,10 +149,10 @@
   }
 
   .page-header__login {
-    margin-left: 46px;
+    margin-left: 5%;
 
     font-weight: normal;
-    width: 292px;
+    width: 29%;
   }
 
 }
