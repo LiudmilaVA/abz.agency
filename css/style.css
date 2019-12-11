@@ -54,10 +54,10 @@ img {
 }
 .page-header__logo {
   position: absolute;
-  top: 20px;
-  left: 15px;
+  top: calc(50% - -10px);
   height: 24px;
   text-align: left;
+  cursor: pointer;
 }
 .page-header__title {
   margin: 0;
@@ -131,7 +131,7 @@ img {
     background-repeat: no-repeat;
   }
   .page-header__logo {
-    left: 47px;
+    top: calc(50% - 22px);
   }
   .page-header__title {
     margin: 0 49% 2% 5%;
@@ -216,9 +216,9 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  right: 70px;
+  right: 290px;
   z-index: 10;
-  min-height: 568px;
+  min-height: 470px;
   background-color: #ffffff;
 }
 .main-nav__list,
@@ -279,7 +279,7 @@ img {
   }
   .main-nav--opened .main-nav__list--wrapper {
     right: 510px;
-    height: 687px;
+    height: 475px;
   }
 }
 /*---------------------------------DESKTOP----------------------------*/
@@ -899,7 +899,7 @@ img {
   border-radius: 4px;
 }
 .registration__form-field:focus {
-  box-sizing: border-box;
+  padding: 17px 12px;
   outline: none;
   border: 2px solid #b7b7b7;
   border-radius: 4px;
@@ -915,6 +915,7 @@ img {
 .registration__select:focus {
   outline: none;
   border: 2px solid #b7b7b7;
+  padding: 18px 12px;
   border-radius: 4px;
 }
 .registration__photo-upload {
@@ -1293,4 +1294,7 @@ img {
     padding-left: 47px;
     padding-right: 47px;
   }
+}
+html {
+  scroll-behavior: smooth;
 }

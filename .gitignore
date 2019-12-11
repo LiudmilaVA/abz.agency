@@ -1,0 +1,10 @@
+.idea/**/*
+*.xml
+*.iml
+task/**/
+*.psd
+*.gif
+package-lock.json
+node_modules/**/*
+**/task/**
+**/node_modules/**

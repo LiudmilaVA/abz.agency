@@ -16,17 +16,17 @@
       <nav class="main-nav main-nav--closed">
         <div class="main-nav--wrapper">
 
-          <div class="page-header__logo"><img src="img/logo.svg" width="134px" height="24px"></div>
+          <div class="page-header__logo"><img src="img/logoNew.svg" width="134px" height="24px"></div>
           <button class="main-nav__toggle" type="button">Открыть меню</button>
 
           <div class="main-nav__list--wrapper">
 
             <ul class="main-nav__list">
-              <li class="main-nav__item"><a href="#">About me</a></li>
-              <li class="main-nav__item"><a href="#">Relationships</a></li>
-              <li class="main-nav__item"><a href="#">Requirements</a></li>
-              <li class="main-nav__item"><a href="#">Users</a></li>
-              <li class="main-nav__item"><a href="#">Sign Up</a></li>
+              <li class="main-nav__item"><a href="#aboutMe">About me</a></li>
+              <li class="main-nav__item"><a href="#relationships">Relationships</a></li>
+              <li class="main-nav__item"><a href="#requirements">Requirements</a></li>
+              <li class="main-nav__item"><a href="#users">Users</a></li>
+              <li class="main-nav__item"><a href="#signUp">Sign Up</a></li>
               <li class="main-nav__item"><a href="#">Sign Out</a></li>
             </ul>
 
@@ -45,7 +45,7 @@
       <div class="page-header--wrapper">
         <h1 class="page-header__title">Test assignment for Frontend Developer position</h1>
         <p class="page-header__intro">We kindly remind you that your test assignment should be submitted as a link to github/bitbucket repository. <span>Please be patient, we consider and respond to every application that meets minimum requirements. We look forward to your submission. Good luck!</span></p>
-        <a class="page-header__login" href="#">Sign Up</a>
+        <a class="page-header__login" href="#signUp">Sign Up</a>
       </div>
 
     </header>
@@ -53,7 +53,7 @@
 
   <main>
 
-    <section class="reviews">
+    <section class="reviews" id="aboutMe">
 
       <h2 class="reviews__title">Let's get acquainted</h2>
       <div class="reviews--image"><img src="img/man-mobile.svg"></div>
@@ -70,7 +70,7 @@
     </section>
 
 
-    <section class="advantages">
+    <section class="advantages" id="relationships">
 
       <h2 class="advantages__title">About my relationships with web-development</h2>
 
@@ -97,7 +97,7 @@
       </ul>
     </section>
 
-    <section class="requirements">
+    <section class="requirements" id="requirements">
 
       <h2 class="requirements__title">General requirements for the test task</h2>
 
@@ -119,7 +119,7 @@
 
     </section>
 
-    <section class="users">
+    <section class="users" id="users">
 
       <h2 class="users__title">Our cheerful users</h2>
 
@@ -159,12 +159,12 @@
           </li>
 
         </ul>
-        
+
       <a class="users__button-more">Show more</a>
 
     </section>
 
-    <section class="registration">
+    <section class="registration" id="signUp">
 
       <h2 class="registration__title">Register to get a work</h2>
       <p class="registration__intro">Attention! After successful registration and alert, update the list of users<br> in the block from the top</p>
@@ -219,13 +219,13 @@
 
       <div class="footer__nav">
 
-        <div class="page-footer__logo"><img src="img/logo-footer.svg" width="134px" height="24px"></div>
+        <div class="page-footer__logo"><img src="img/logo-footerNew.svg" width="134px" height="24px"></div>
         <ul class="footer-nav__list">
-          <li class="footer-nav__item"><a href="#">About me</a></li>
-          <li class="footer-nav__item"><a href="#">Relationships</a></li>
-          <li class="footer-nav__item"><a href="#">Requirements</a></li>
-          <li class="footer-nav__item"><a href="#">Users</a></li>
-          <li class="footer-nav__item"><a href="#">Sign Up</a></li>
+          <li class="footer-nav__item"><a href="#aboutMe">About me</a></li>
+          <li class="footer-nav__item"><a href="#relationships">Relationships</a></li>
+          <li class="footer-nav__item"><a href="#requirements">Requirements</a></li>
+          <li class="footer-nav__item"><a href="#users">Users</a></li>
+          <li class="footer-nav__item"><a href="#signUp">Sign Up</a></li>
         </ul>
 
       </div>
@@ -274,14 +274,14 @@
 
       <div class="page-footer__social">
 
-        <p class="page-footer__copyright">© abz.agency specially for the test task</p>
+        <p class="page-footer__copyright">© techLogo  specially for the test task</p>
 
         <ul class="social__list">
           <li><a class="social__btn" href="#"><svg width="26" height="26"><use xlink:href='#facebook'/></svg>Фейсбук</a></li>
-          <li><a class="social__btn" href="#"><svg width="26" height="26"><use xlink:href='#linkedin'/>Линкедин</a></li>
-          <li><a class="social__btn" href="#"><svg width="26" height="26"><use xlink:href='#instagram'/>Инстаграм</a></li>
-          <li><a class="social__btn" href="#"><svg width="26" height="26"><use xlink:href='#twitter'/>Твиттер</a></li>
-          <li><a class="social__btn" href="#"><svg width="26" height="26"><use xlink:href='#pinterest' />Пинтерест</a></li>
+          <li><a class="social__btn" href="#"><svg width="26" height="26"><use xlink:href='#linkedin'/></svg>Линкедин</a></li>
+          <li><a class="social__btn" href="#"><svg width="26" height="26"><use xlink:href='#instagram'/></svg>Инстаграм</a></li>
+          <li><a class="social__btn" href="#"><svg width="26" height="26"><use xlink:href='#twitter'/></svg>Твиттер</a></li>
+          <li><a class="social__btn" href="#"><svg width="26" height="26"><use xlink:href='#pinterest' /></svg>Пинтерест</a></li>
         </ul>
       </div>
 
@@ -293,9 +293,8 @@
 
   <script>
 
-    // Открыть/закрыть меню
-    var navMain = document.querySelector(".main-nav");
-    var navToggle = document.querySelector(".main-nav__toggle");
+    const navMain = document.querySelector(".main-nav");
+    const navToggle = document.querySelector(".main-nav__toggle");
 
     navToggle.addEventListener("click", function() {
       if (navMain.classList.contains("main-nav--closed")) {
@@ -309,45 +308,6 @@
     });
 
 
-  // //   // Спрайты загрузка/проверка
-  //   ;(function(window, document) {
-  //     'use strict';
-  //     var file = 'img/symbols.svg',
-  //     revision = 1;
-  //   if (!document.createElementNS || !document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect) return true;
-  //   var isLocalStorage = 'localStorage' in window && window\['localStorage'\] !== null,
-  //     request,
-  //     data,
-  //     insertIT = function() {
-  //       document.body.insertAdjacentHTML('afterbegin', data);
-  //     },
-  //     insert = function() {
-  //       if (document.body) insertIT();
-  //       else document.addEventListener('DOMContentLoaded', insertIT);
-  //     };
-  //   if (isLocalStorage && localStorage.getItem('inlineSVGrev') == revision) {
-  //     data = localStorage.getItem('inlineSVGdata');
-  //     if (data) {
-  //       insert();
-  //       return true;
-  //     }
-  //   }
-  //   try {
-  //     request = new XMLHttpRequest();
-  //     request.open('GET', file, true);
-  //     request.onload = function() {
-  //       if (request.status >= 200 && request.status < 400) {
-  //         data = request.responseText;
-  //         insert();
-  //         if (isLocalStorage) {
-  //           localStorage.setItem('inlineSVGdata', data);
-  //           localStorage.setItem('inlineSVGrev', revision);
-  //         }
-  //       }
-  //     }
-  //     request.send();
-  //   } catch (e) {}
-  // }(window, document));
 
   </script>
 
